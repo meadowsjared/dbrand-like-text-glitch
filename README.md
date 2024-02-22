@@ -1,4 +1,4 @@
-# grid-template-columns-example-1
+# dbrand-like text glitch
 Created with CodeSandbox
 
 <img src="demo.gif">
