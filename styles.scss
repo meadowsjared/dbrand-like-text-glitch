@@ -1,0 +1,106 @@
+$font: "Roboto", monospace;
+$anim-length: 100000ms;
+$max-words: 59; // Assuming a maximum of 50 words
+$max-letters-per-word: 13; // Assuming a maximum of 20 letters per word
+$default-color: #ff4e00;
+
+html {
+  background: rgb(17, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: $default-color;
+  font-family: $font;
+}
+
+.portfolio-experiment {
+  overflow: auto;
+}
+
+.experiment-title {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  font-size: 2rem;
+  font-family: $font;
+  --anim-length: #{$anim-length};
+  --default-color: #{$default-color};
+}
+
+.word-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  word-break: keep-all;
+  margin-right: 0.25em;
+}
+
+@mixin sharedKeyframeProperties($initial-transform, $mid-transform) {
+  0%,
+  50%,
+  50.8%,
+  100% {
+    text-transform: $initial-transform;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  50.2% {
+    text-transform: $mid-transform;
+    font-style: normal;
+  }
+  50.3% {
+    text-decoration-line: line-through;
+    text-transform: $mid-transform;
+  }
+  50.5% {
+    text-decoration-line: none;
+    text-transform: $mid-transform;
+    font-style: normal;
+  }
+  50.6% {
+    text-decoration-line: none;
+    text-transform: $initial-transform;
+    font-style: italic;
+  }
+  50.7% {
+    text-decoration-line: underline;
+    font-style: italic;
+    text-decoration-skip-ink: none;
+  }
+  50.75% {
+    text-decoration-line: underline;
+    font-style: normal;
+  }
+  50.8% {
+    font-style: normal;
+    text-decoration-skip-ink: all;
+  }
+}
+
+@keyframes capitalize-anim {
+  @include sharedKeyframeProperties(lowercase, uppercase);
+}
+@keyframes uncapitalize-anim {
+  @include sharedKeyframeProperties(uppercase, lowercase);
+}
+
+.experiment-title > .word-container > span:not(.capital) {
+  animation: capitalize-anim $anim-length infinite;
+  transform: perspective(500px) translateZ(0px);
+}
+
+.experiment-title > .word-container > span.capital {
+  animation: uncapitalize-anim $anim-length infinite;
+  transform: perspective(500px) translateZ(0px);
+}
+
+@for $word-index from 1 through $max-words {
+  @for $letter-index from 1 through $max-letters-per-word {
+    .experiment-title
+      > .word-container:nth-child(#{$word-index})
+      > span:nth-child(#{$letter-index}) {
+      animation-delay: random($anim-length) * -1ms;
+    }
+  }
+}

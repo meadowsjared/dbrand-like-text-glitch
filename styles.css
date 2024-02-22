@@ -1,0 +1,3937 @@
+html {
+  background: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #ff4e00;
+  font-family: "Roboto", monospace; }
+
+.portfolio-experiment {
+  overflow: auto; }
+
+.experiment-title {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  font-size: 2rem;
+  font-family: "Roboto", monospace;
+  --anim-length: 100000ms;
+  --default-color: #ff4e00; }
+
+.word-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  word-break: keep-all;
+  margin-right: 0.25em; }
+
+@keyframes capitalize-anim {
+  0%,
+  50%,
+  50.8%,
+  100% {
+    text-transform: lowercase;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400; }
+  50.2% {
+    text-transform: uppercase;
+    font-style: normal; }
+  50.3% {
+    text-decoration-line: line-through;
+    text-transform: uppercase; }
+  50.5% {
+    text-decoration-line: none;
+    text-transform: uppercase;
+    font-style: normal; }
+  50.6% {
+    text-decoration-line: none;
+    text-transform: lowercase;
+    font-style: italic; }
+  50.7% {
+    text-decoration-line: underline;
+    font-style: italic;
+    text-decoration-skip-ink: none; }
+  50.75% {
+    text-decoration-line: underline;
+    font-style: normal; }
+  50.8% {
+    font-style: normal;
+    text-decoration-skip-ink: all; } }
+
+@keyframes uncapitalize-anim {
+  0%,
+  50%,
+  50.8%,
+  100% {
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400; }
+  50.2% {
+    text-transform: lowercase;
+    font-style: normal; }
+  50.3% {
+    text-decoration-line: line-through;
+    text-transform: lowercase; }
+  50.5% {
+    text-decoration-line: none;
+    text-transform: lowercase;
+    font-style: normal; }
+  50.6% {
+    text-decoration-line: none;
+    text-transform: uppercase;
+    font-style: italic; }
+  50.7% {
+    text-decoration-line: underline;
+    font-style: italic;
+    text-decoration-skip-ink: none; }
+  50.75% {
+    text-decoration-line: underline;
+    font-style: normal; }
+  50.8% {
+    font-style: normal;
+    text-decoration-skip-ink: all; } }
+
+.experiment-title > .word-container > span:not(.capital) {
+  animation: capitalize-anim 100000ms infinite;
+  transform: perspective(500px) translateZ(0px); }
+
+.experiment-title > .word-container > span.capital {
+  animation: uncapitalize-anim 100000ms infinite;
+  transform: perspective(500px) translateZ(0px); }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(1) {
+  animation-delay: -94748ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(2) {
+  animation-delay: -23393ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(3) {
+  animation-delay: -31114ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(4) {
+  animation-delay: -33670ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(5) {
+  animation-delay: -44092ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(6) {
+  animation-delay: -74187ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(7) {
+  animation-delay: -19982ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(8) {
+  animation-delay: -98555ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(9) {
+  animation-delay: -9290ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(10) {
+  animation-delay: -18197ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(11) {
+  animation-delay: -19113ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(12) {
+  animation-delay: -17687ms; }
+
+.experiment-title
+> .word-container:nth-child(1)
+> span:nth-child(13) {
+  animation-delay: -71208ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(1) {
+  animation-delay: -69341ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(2) {
+  animation-delay: -92051ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(3) {
+  animation-delay: -17889ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(4) {
+  animation-delay: -50065ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(5) {
+  animation-delay: -59783ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(6) {
+  animation-delay: -97007ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(7) {
+  animation-delay: -30812ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(8) {
+  animation-delay: -38907ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(9) {
+  animation-delay: -3365ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(10) {
+  animation-delay: -39777ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(11) {
+  animation-delay: -34243ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(12) {
+  animation-delay: -88290ms; }
+
+.experiment-title
+> .word-container:nth-child(2)
+> span:nth-child(13) {
+  animation-delay: -25293ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(1) {
+  animation-delay: -44135ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(2) {
+  animation-delay: -63959ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(3) {
+  animation-delay: -47077ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(4) {
+  animation-delay: -74651ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(5) {
+  animation-delay: -79094ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(6) {
+  animation-delay: -91305ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(7) {
+  animation-delay: -57063ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(8) {
+  animation-delay: -53129ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(9) {
+  animation-delay: -64490ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(10) {
+  animation-delay: -68237ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(11) {
+  animation-delay: -35134ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(12) {
+  animation-delay: -37922ms; }
+
+.experiment-title
+> .word-container:nth-child(3)
+> span:nth-child(13) {
+  animation-delay: -60630ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(1) {
+  animation-delay: -83048ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(2) {
+  animation-delay: -38442ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(3) {
+  animation-delay: -17902ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(4) {
+  animation-delay: -45418ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(5) {
+  animation-delay: -35053ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(6) {
+  animation-delay: -71733ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(7) {
+  animation-delay: -18830ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(8) {
+  animation-delay: -57228ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(9) {
+  animation-delay: -94931ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(10) {
+  animation-delay: -44640ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(11) {
+  animation-delay: -43545ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(12) {
+  animation-delay: -52524ms; }
+
+.experiment-title
+> .word-container:nth-child(4)
+> span:nth-child(13) {
+  animation-delay: -83151ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(1) {
+  animation-delay: -63919ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(2) {
+  animation-delay: -23809ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(3) {
+  animation-delay: -11273ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(4) {
+  animation-delay: -59059ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(5) {
+  animation-delay: -54544ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(6) {
+  animation-delay: -61461ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(7) {
+  animation-delay: -98082ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(8) {
+  animation-delay: -36764ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(9) {
+  animation-delay: -81364ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(10) {
+  animation-delay: -18482ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(11) {
+  animation-delay: -3805ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(12) {
+  animation-delay: -69914ms; }
+
+.experiment-title
+> .word-container:nth-child(5)
+> span:nth-child(13) {
+  animation-delay: -17578ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(1) {
+  animation-delay: -86470ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(2) {
+  animation-delay: -31451ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(3) {
+  animation-delay: -82220ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(4) {
+  animation-delay: -10620ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(5) {
+  animation-delay: -31851ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(6) {
+  animation-delay: -15847ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(7) {
+  animation-delay: -42202ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(8) {
+  animation-delay: -96565ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(9) {
+  animation-delay: -70686ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(10) {
+  animation-delay: -99430ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(11) {
+  animation-delay: -57074ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(12) {
+  animation-delay: -86887ms; }
+
+.experiment-title
+> .word-container:nth-child(6)
+> span:nth-child(13) {
+  animation-delay: -92994ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(1) {
+  animation-delay: -90589ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(2) {
+  animation-delay: -98545ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(3) {
+  animation-delay: -69561ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(4) {
+  animation-delay: -67749ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(5) {
+  animation-delay: -18295ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(6) {
+  animation-delay: -61331ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(7) {
+  animation-delay: -96284ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(8) {
+  animation-delay: -89579ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(9) {
+  animation-delay: -1852ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(10) {
+  animation-delay: -14377ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(11) {
+  animation-delay: -17662ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(12) {
+  animation-delay: -89787ms; }
+
+.experiment-title
+> .word-container:nth-child(7)
+> span:nth-child(13) {
+  animation-delay: -84696ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(1) {
+  animation-delay: -72937ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(2) {
+  animation-delay: -32264ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(3) {
+  animation-delay: -54832ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(4) {
+  animation-delay: -74600ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(5) {
+  animation-delay: -69784ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(6) {
+  animation-delay: -88785ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(7) {
+  animation-delay: -2825ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(8) {
+  animation-delay: -58032ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(9) {
+  animation-delay: -62821ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(10) {
+  animation-delay: -37892ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(11) {
+  animation-delay: -5581ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(12) {
+  animation-delay: -19099ms; }
+
+.experiment-title
+> .word-container:nth-child(8)
+> span:nth-child(13) {
+  animation-delay: -65699ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(1) {
+  animation-delay: -54372ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(2) {
+  animation-delay: -89697ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(3) {
+  animation-delay: -46037ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(4) {
+  animation-delay: -2580ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(5) {
+  animation-delay: -20056ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(6) {
+  animation-delay: -49908ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(7) {
+  animation-delay: -43518ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(8) {
+  animation-delay: -63342ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(9) {
+  animation-delay: -96429ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(10) {
+  animation-delay: -45120ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(11) {
+  animation-delay: -41207ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(12) {
+  animation-delay: -17663ms; }
+
+.experiment-title
+> .word-container:nth-child(9)
+> span:nth-child(13) {
+  animation-delay: -43995ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(1) {
+  animation-delay: -77ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(2) {
+  animation-delay: -13563ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(3) {
+  animation-delay: -74507ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(4) {
+  animation-delay: -1979ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(5) {
+  animation-delay: -5328ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(6) {
+  animation-delay: -85573ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(7) {
+  animation-delay: -97206ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(8) {
+  animation-delay: -7681ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(9) {
+  animation-delay: -19187ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(10) {
+  animation-delay: -17735ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(11) {
+  animation-delay: -65357ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(12) {
+  animation-delay: -87551ms; }
+
+.experiment-title
+> .word-container:nth-child(10)
+> span:nth-child(13) {
+  animation-delay: -39542ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(1) {
+  animation-delay: -51454ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(2) {
+  animation-delay: -52366ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(3) {
+  animation-delay: -83347ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(4) {
+  animation-delay: -87984ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(5) {
+  animation-delay: -50928ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(6) {
+  animation-delay: -84715ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(7) {
+  animation-delay: -13573ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(8) {
+  animation-delay: -2739ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(9) {
+  animation-delay: -88661ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(10) {
+  animation-delay: -95499ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(11) {
+  animation-delay: -41059ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(12) {
+  animation-delay: -82005ms; }
+
+.experiment-title
+> .word-container:nth-child(11)
+> span:nth-child(13) {
+  animation-delay: -808ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(1) {
+  animation-delay: -8084ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(2) {
+  animation-delay: -71610ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(3) {
+  animation-delay: -51045ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(4) {
+  animation-delay: -57079ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(5) {
+  animation-delay: -41327ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(6) {
+  animation-delay: -67618ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(7) {
+  animation-delay: -3264ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(8) {
+  animation-delay: -25468ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(9) {
+  animation-delay: -90445ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(10) {
+  animation-delay: -46515ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(11) {
+  animation-delay: -80841ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(12) {
+  animation-delay: -20937ms; }
+
+.experiment-title
+> .word-container:nth-child(12)
+> span:nth-child(13) {
+  animation-delay: -40725ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(1) {
+  animation-delay: -7290ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(2) {
+  animation-delay: -75484ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(3) {
+  animation-delay: -32740ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(4) {
+  animation-delay: -3816ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(5) {
+  animation-delay: -78333ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(6) {
+  animation-delay: -32483ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(7) {
+  animation-delay: -42609ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(8) {
+  animation-delay: -14618ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(9) {
+  animation-delay: -8799ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(10) {
+  animation-delay: -35058ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(11) {
+  animation-delay: -17204ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(12) {
+  animation-delay: -36786ms; }
+
+.experiment-title
+> .word-container:nth-child(13)
+> span:nth-child(13) {
+  animation-delay: -12822ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(1) {
+  animation-delay: -95748ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(2) {
+  animation-delay: -74231ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(3) {
+  animation-delay: -48249ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(4) {
+  animation-delay: -5611ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(5) {
+  animation-delay: -7456ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(6) {
+  animation-delay: -1425ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(7) {
+  animation-delay: -83187ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(8) {
+  animation-delay: -62481ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(9) {
+  animation-delay: -26597ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(10) {
+  animation-delay: -11014ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(11) {
+  animation-delay: -47579ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(12) {
+  animation-delay: -59675ms; }
+
+.experiment-title
+> .word-container:nth-child(14)
+> span:nth-child(13) {
+  animation-delay: -9130ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(1) {
+  animation-delay: -1375ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(2) {
+  animation-delay: -43200ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(3) {
+  animation-delay: -76701ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(4) {
+  animation-delay: -53604ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(5) {
+  animation-delay: -58267ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(6) {
+  animation-delay: -71346ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(7) {
+  animation-delay: -97793ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(8) {
+  animation-delay: -64303ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(9) {
+  animation-delay: -24578ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(10) {
+  animation-delay: -16223ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(11) {
+  animation-delay: -27520ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(12) {
+  animation-delay: -78940ms; }
+
+.experiment-title
+> .word-container:nth-child(15)
+> span:nth-child(13) {
+  animation-delay: -72089ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(1) {
+  animation-delay: -53729ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(2) {
+  animation-delay: -67126ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(3) {
+  animation-delay: -4220ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(4) {
+  animation-delay: -99577ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(5) {
+  animation-delay: -85169ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(6) {
+  animation-delay: -83004ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(7) {
+  animation-delay: -28285ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(8) {
+  animation-delay: -82484ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(9) {
+  animation-delay: -82746ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(10) {
+  animation-delay: -28440ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(11) {
+  animation-delay: -7440ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(12) {
+  animation-delay: -81111ms; }
+
+.experiment-title
+> .word-container:nth-child(16)
+> span:nth-child(13) {
+  animation-delay: -39061ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(1) {
+  animation-delay: -73930ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(2) {
+  animation-delay: -76758ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(3) {
+  animation-delay: -89665ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(4) {
+  animation-delay: -76076ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(5) {
+  animation-delay: -31213ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(6) {
+  animation-delay: -25048ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(7) {
+  animation-delay: -39441ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(8) {
+  animation-delay: -55529ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(9) {
+  animation-delay: -51842ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(10) {
+  animation-delay: -90152ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(11) {
+  animation-delay: -28095ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(12) {
+  animation-delay: -74991ms; }
+
+.experiment-title
+> .word-container:nth-child(17)
+> span:nth-child(13) {
+  animation-delay: -91538ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(1) {
+  animation-delay: -97560ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(2) {
+  animation-delay: -36437ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(3) {
+  animation-delay: -97263ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(4) {
+  animation-delay: -14698ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(5) {
+  animation-delay: -44528ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(6) {
+  animation-delay: -74107ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(7) {
+  animation-delay: -23502ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(8) {
+  animation-delay: -40531ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(9) {
+  animation-delay: -70479ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(10) {
+  animation-delay: -11354ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(11) {
+  animation-delay: -13859ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(12) {
+  animation-delay: -22741ms; }
+
+.experiment-title
+> .word-container:nth-child(18)
+> span:nth-child(13) {
+  animation-delay: -73881ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(1) {
+  animation-delay: -11773ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(2) {
+  animation-delay: -47686ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(3) {
+  animation-delay: -701ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(4) {
+  animation-delay: -89887ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(5) {
+  animation-delay: -24603ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(6) {
+  animation-delay: -75461ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(7) {
+  animation-delay: -93633ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(8) {
+  animation-delay: -13821ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(9) {
+  animation-delay: -89648ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(10) {
+  animation-delay: -7964ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(11) {
+  animation-delay: -62571ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(12) {
+  animation-delay: -99033ms; }
+
+.experiment-title
+> .word-container:nth-child(19)
+> span:nth-child(13) {
+  animation-delay: -67590ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(1) {
+  animation-delay: -88825ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(2) {
+  animation-delay: -553ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(3) {
+  animation-delay: -17277ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(4) {
+  animation-delay: -33674ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(5) {
+  animation-delay: -86812ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(6) {
+  animation-delay: -3116ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(7) {
+  animation-delay: -48591ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(8) {
+  animation-delay: -65628ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(9) {
+  animation-delay: -47312ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(10) {
+  animation-delay: -30591ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(11) {
+  animation-delay: -18637ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(12) {
+  animation-delay: -86713ms; }
+
+.experiment-title
+> .word-container:nth-child(20)
+> span:nth-child(13) {
+  animation-delay: -50152ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(1) {
+  animation-delay: -87580ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(2) {
+  animation-delay: -40081ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(3) {
+  animation-delay: -25488ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(4) {
+  animation-delay: -98439ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(5) {
+  animation-delay: -18315ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(6) {
+  animation-delay: -37538ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(7) {
+  animation-delay: -95072ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(8) {
+  animation-delay: -47559ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(9) {
+  animation-delay: -83175ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(10) {
+  animation-delay: -69718ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(11) {
+  animation-delay: -23211ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(12) {
+  animation-delay: -33812ms; }
+
+.experiment-title
+> .word-container:nth-child(21)
+> span:nth-child(13) {
+  animation-delay: -32579ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(1) {
+  animation-delay: -24928ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(2) {
+  animation-delay: -18662ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(3) {
+  animation-delay: -69393ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(4) {
+  animation-delay: -37222ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(5) {
+  animation-delay: -87936ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(6) {
+  animation-delay: -88356ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(7) {
+  animation-delay: -36280ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(8) {
+  animation-delay: -72659ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(9) {
+  animation-delay: -98457ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(10) {
+  animation-delay: -59067ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(11) {
+  animation-delay: -30469ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(12) {
+  animation-delay: -43828ms; }
+
+.experiment-title
+> .word-container:nth-child(22)
+> span:nth-child(13) {
+  animation-delay: -98631ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(1) {
+  animation-delay: -26826ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(2) {
+  animation-delay: -20976ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(3) {
+  animation-delay: -48684ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(4) {
+  animation-delay: -71861ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(5) {
+  animation-delay: -17634ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(6) {
+  animation-delay: -19965ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(7) {
+  animation-delay: -22742ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(8) {
+  animation-delay: -63863ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(9) {
+  animation-delay: -47104ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(10) {
+  animation-delay: -76584ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(11) {
+  animation-delay: -37474ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(12) {
+  animation-delay: -77663ms; }
+
+.experiment-title
+> .word-container:nth-child(23)
+> span:nth-child(13) {
+  animation-delay: -91087ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(1) {
+  animation-delay: -58766ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(2) {
+  animation-delay: -44010ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(3) {
+  animation-delay: -39507ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(4) {
+  animation-delay: -86857ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(5) {
+  animation-delay: -25004ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(6) {
+  animation-delay: -2313ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(7) {
+  animation-delay: -18962ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(8) {
+  animation-delay: -99327ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(9) {
+  animation-delay: -43858ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(10) {
+  animation-delay: -40500ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(11) {
+  animation-delay: -10070ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(12) {
+  animation-delay: -11078ms; }
+
+.experiment-title
+> .word-container:nth-child(24)
+> span:nth-child(13) {
+  animation-delay: -64981ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(1) {
+  animation-delay: -14541ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(2) {
+  animation-delay: -81323ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(3) {
+  animation-delay: -37083ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(4) {
+  animation-delay: -54648ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(5) {
+  animation-delay: -40569ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(6) {
+  animation-delay: -3082ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(7) {
+  animation-delay: -81990ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(8) {
+  animation-delay: -69914ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(9) {
+  animation-delay: -12277ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(10) {
+  animation-delay: -4171ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(11) {
+  animation-delay: -80189ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(12) {
+  animation-delay: -93650ms; }
+
+.experiment-title
+> .word-container:nth-child(25)
+> span:nth-child(13) {
+  animation-delay: -62549ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(1) {
+  animation-delay: -21063ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(2) {
+  animation-delay: -44548ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(3) {
+  animation-delay: -70707ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(4) {
+  animation-delay: -682ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(5) {
+  animation-delay: -17458ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(6) {
+  animation-delay: -36765ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(7) {
+  animation-delay: -45396ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(8) {
+  animation-delay: -67969ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(9) {
+  animation-delay: -69872ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(10) {
+  animation-delay: -22155ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(11) {
+  animation-delay: -36582ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(12) {
+  animation-delay: -55352ms; }
+
+.experiment-title
+> .word-container:nth-child(26)
+> span:nth-child(13) {
+  animation-delay: -21234ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(1) {
+  animation-delay: -11061ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(2) {
+  animation-delay: -34574ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(3) {
+  animation-delay: -83021ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(4) {
+  animation-delay: -59043ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(5) {
+  animation-delay: -92681ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(6) {
+  animation-delay: -41133ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(7) {
+  animation-delay: -63457ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(8) {
+  animation-delay: -34522ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(9) {
+  animation-delay: -91646ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(10) {
+  animation-delay: -20612ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(11) {
+  animation-delay: -74571ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(12) {
+  animation-delay: -50741ms; }
+
+.experiment-title
+> .word-container:nth-child(27)
+> span:nth-child(13) {
+  animation-delay: -53042ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(1) {
+  animation-delay: -53077ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(2) {
+  animation-delay: -42419ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(3) {
+  animation-delay: -52036ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(4) {
+  animation-delay: -42795ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(5) {
+  animation-delay: -50138ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(6) {
+  animation-delay: -55915ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(7) {
+  animation-delay: -5163ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(8) {
+  animation-delay: -17538ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(9) {
+  animation-delay: -88645ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(10) {
+  animation-delay: -89486ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(11) {
+  animation-delay: -89760ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(12) {
+  animation-delay: -4096ms; }
+
+.experiment-title
+> .word-container:nth-child(28)
+> span:nth-child(13) {
+  animation-delay: -9337ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(1) {
+  animation-delay: -16319ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(2) {
+  animation-delay: -90922ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(3) {
+  animation-delay: -20172ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(4) {
+  animation-delay: -46612ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(5) {
+  animation-delay: -67856ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(6) {
+  animation-delay: -81010ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(7) {
+  animation-delay: -21656ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(8) {
+  animation-delay: -50201ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(9) {
+  animation-delay: -29971ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(10) {
+  animation-delay: -59931ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(11) {
+  animation-delay: -10244ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(12) {
+  animation-delay: -81472ms; }
+
+.experiment-title
+> .word-container:nth-child(29)
+> span:nth-child(13) {
+  animation-delay: -47625ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(1) {
+  animation-delay: -67165ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(2) {
+  animation-delay: -47648ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(3) {
+  animation-delay: -40975ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(4) {
+  animation-delay: -36099ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(5) {
+  animation-delay: -4489ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(6) {
+  animation-delay: -65324ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(7) {
+  animation-delay: -61309ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(8) {
+  animation-delay: -17756ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(9) {
+  animation-delay: -97426ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(10) {
+  animation-delay: -49474ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(11) {
+  animation-delay: -15283ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(12) {
+  animation-delay: -30195ms; }
+
+.experiment-title
+> .word-container:nth-child(30)
+> span:nth-child(13) {
+  animation-delay: -34781ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(1) {
+  animation-delay: -66794ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(2) {
+  animation-delay: -20918ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(3) {
+  animation-delay: -22966ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(4) {
+  animation-delay: -19649ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(5) {
+  animation-delay: -44002ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(6) {
+  animation-delay: -62651ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(7) {
+  animation-delay: -22430ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(8) {
+  animation-delay: -79463ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(9) {
+  animation-delay: -64258ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(10) {
+  animation-delay: -84299ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(11) {
+  animation-delay: -30958ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(12) {
+  animation-delay: -34625ms; }
+
+.experiment-title
+> .word-container:nth-child(31)
+> span:nth-child(13) {
+  animation-delay: -3587ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(1) {
+  animation-delay: -55784ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(2) {
+  animation-delay: -29547ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(3) {
+  animation-delay: -31043ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(4) {
+  animation-delay: -76165ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(5) {
+  animation-delay: -69703ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(6) {
+  animation-delay: -6683ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(7) {
+  animation-delay: -45610ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(8) {
+  animation-delay: -53526ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(9) {
+  animation-delay: -54084ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(10) {
+  animation-delay: -79030ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(11) {
+  animation-delay: -646ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(12) {
+  animation-delay: -57947ms; }
+
+.experiment-title
+> .word-container:nth-child(32)
+> span:nth-child(13) {
+  animation-delay: -73501ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(1) {
+  animation-delay: -15934ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(2) {
+  animation-delay: -99307ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(3) {
+  animation-delay: -27598ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(4) {
+  animation-delay: -91822ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(5) {
+  animation-delay: -11199ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(6) {
+  animation-delay: -95799ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(7) {
+  animation-delay: -78940ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(8) {
+  animation-delay: -23724ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(9) {
+  animation-delay: -63122ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(10) {
+  animation-delay: -18886ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(11) {
+  animation-delay: -363ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(12) {
+  animation-delay: -62522ms; }
+
+.experiment-title
+> .word-container:nth-child(33)
+> span:nth-child(13) {
+  animation-delay: -26638ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(1) {
+  animation-delay: -62722ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(2) {
+  animation-delay: -55844ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(3) {
+  animation-delay: -31025ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(4) {
+  animation-delay: -50976ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(5) {
+  animation-delay: -84997ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(6) {
+  animation-delay: -27709ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(7) {
+  animation-delay: -1460ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(8) {
+  animation-delay: -22726ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(9) {
+  animation-delay: -45210ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(10) {
+  animation-delay: -43854ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(11) {
+  animation-delay: -15168ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(12) {
+  animation-delay: -37596ms; }
+
+.experiment-title
+> .word-container:nth-child(34)
+> span:nth-child(13) {
+  animation-delay: -41379ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(1) {
+  animation-delay: -38731ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(2) {
+  animation-delay: -46159ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(3) {
+  animation-delay: -54973ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(4) {
+  animation-delay: -9930ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(5) {
+  animation-delay: -85011ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(6) {
+  animation-delay: -1588ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(7) {
+  animation-delay: -96364ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(8) {
+  animation-delay: -16713ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(9) {
+  animation-delay: -20279ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(10) {
+  animation-delay: -97903ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(11) {
+  animation-delay: -6240ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(12) {
+  animation-delay: -54948ms; }
+
+.experiment-title
+> .word-container:nth-child(35)
+> span:nth-child(13) {
+  animation-delay: -43141ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(1) {
+  animation-delay: -20192ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(2) {
+  animation-delay: -4612ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(3) {
+  animation-delay: -4770ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(4) {
+  animation-delay: -20397ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(5) {
+  animation-delay: -39911ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(6) {
+  animation-delay: -17626ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(7) {
+  animation-delay: -99173ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(8) {
+  animation-delay: -4810ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(9) {
+  animation-delay: -55243ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(10) {
+  animation-delay: -51316ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(11) {
+  animation-delay: -63220ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(12) {
+  animation-delay: -27240ms; }
+
+.experiment-title
+> .word-container:nth-child(36)
+> span:nth-child(13) {
+  animation-delay: -40678ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(1) {
+  animation-delay: -53836ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(2) {
+  animation-delay: -67010ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(3) {
+  animation-delay: -23777ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(4) {
+  animation-delay: -3261ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(5) {
+  animation-delay: -13460ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(6) {
+  animation-delay: -18703ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(7) {
+  animation-delay: -69355ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(8) {
+  animation-delay: -94437ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(9) {
+  animation-delay: -95491ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(10) {
+  animation-delay: -93174ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(11) {
+  animation-delay: -62474ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(12) {
+  animation-delay: -96829ms; }
+
+.experiment-title
+> .word-container:nth-child(37)
+> span:nth-child(13) {
+  animation-delay: -61271ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(1) {
+  animation-delay: -95782ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(2) {
+  animation-delay: -21136ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(3) {
+  animation-delay: -69584ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(4) {
+  animation-delay: -58380ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(5) {
+  animation-delay: -81650ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(6) {
+  animation-delay: -18255ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(7) {
+  animation-delay: -78190ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(8) {
+  animation-delay: -83019ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(9) {
+  animation-delay: -11887ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(10) {
+  animation-delay: -47759ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(11) {
+  animation-delay: -61269ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(12) {
+  animation-delay: -39429ms; }
+
+.experiment-title
+> .word-container:nth-child(38)
+> span:nth-child(13) {
+  animation-delay: -37352ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(1) {
+  animation-delay: -3002ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(2) {
+  animation-delay: -88518ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(3) {
+  animation-delay: -73484ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(4) {
+  animation-delay: -85268ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(5) {
+  animation-delay: -91150ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(6) {
+  animation-delay: -10983ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(7) {
+  animation-delay: -29722ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(8) {
+  animation-delay: -41206ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(9) {
+  animation-delay: -13205ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(10) {
+  animation-delay: -4846ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(11) {
+  animation-delay: -28184ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(12) {
+  animation-delay: -31696ms; }
+
+.experiment-title
+> .word-container:nth-child(39)
+> span:nth-child(13) {
+  animation-delay: -45170ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(1) {
+  animation-delay: -11502ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(2) {
+  animation-delay: -23090ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(3) {
+  animation-delay: -13722ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(4) {
+  animation-delay: -45339ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(5) {
+  animation-delay: -3051ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(6) {
+  animation-delay: -24258ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(7) {
+  animation-delay: -46548ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(8) {
+  animation-delay: -53084ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(9) {
+  animation-delay: -12082ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(10) {
+  animation-delay: -74745ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(11) {
+  animation-delay: -47131ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(12) {
+  animation-delay: -32672ms; }
+
+.experiment-title
+> .word-container:nth-child(40)
+> span:nth-child(13) {
+  animation-delay: -83431ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(1) {
+  animation-delay: -36708ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(2) {
+  animation-delay: -9010ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(3) {
+  animation-delay: -91440ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(4) {
+  animation-delay: -10118ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(5) {
+  animation-delay: -19926ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(6) {
+  animation-delay: -66962ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(7) {
+  animation-delay: -38730ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(8) {
+  animation-delay: -16434ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(9) {
+  animation-delay: -94427ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(10) {
+  animation-delay: -94928ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(11) {
+  animation-delay: -68429ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(12) {
+  animation-delay: -14152ms; }
+
+.experiment-title
+> .word-container:nth-child(41)
+> span:nth-child(13) {
+  animation-delay: -41792ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(1) {
+  animation-delay: -93725ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(2) {
+  animation-delay: -6863ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(3) {
+  animation-delay: -24459ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(4) {
+  animation-delay: -79856ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(5) {
+  animation-delay: -59103ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(6) {
+  animation-delay: -24116ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(7) {
+  animation-delay: -79422ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(8) {
+  animation-delay: -2814ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(9) {
+  animation-delay: -88845ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(10) {
+  animation-delay: -80801ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(11) {
+  animation-delay: -77675ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(12) {
+  animation-delay: -45837ms; }
+
+.experiment-title
+> .word-container:nth-child(42)
+> span:nth-child(13) {
+  animation-delay: -72593ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(1) {
+  animation-delay: -21489ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(2) {
+  animation-delay: -1102ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(3) {
+  animation-delay: -96114ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(4) {
+  animation-delay: -1464ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(5) {
+  animation-delay: -84051ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(6) {
+  animation-delay: -55687ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(7) {
+  animation-delay: -94760ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(8) {
+  animation-delay: -38419ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(9) {
+  animation-delay: -43223ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(10) {
+  animation-delay: -7583ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(11) {
+  animation-delay: -13150ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(12) {
+  animation-delay: -15336ms; }
+
+.experiment-title
+> .word-container:nth-child(43)
+> span:nth-child(13) {
+  animation-delay: -64827ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(1) {
+  animation-delay: -49465ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(2) {
+  animation-delay: -48921ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(3) {
+  animation-delay: -82731ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(4) {
+  animation-delay: -38414ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(5) {
+  animation-delay: -20160ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(6) {
+  animation-delay: -71632ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(7) {
+  animation-delay: -41465ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(8) {
+  animation-delay: -19435ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(9) {
+  animation-delay: -63395ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(10) {
+  animation-delay: -57465ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(11) {
+  animation-delay: -56095ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(12) {
+  animation-delay: -72292ms; }
+
+.experiment-title
+> .word-container:nth-child(44)
+> span:nth-child(13) {
+  animation-delay: -43470ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(1) {
+  animation-delay: -55952ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(2) {
+  animation-delay: -27841ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(3) {
+  animation-delay: -91648ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(4) {
+  animation-delay: -32825ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(5) {
+  animation-delay: -38241ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(6) {
+  animation-delay: -84551ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(7) {
+  animation-delay: -62792ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(8) {
+  animation-delay: -58751ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(9) {
+  animation-delay: -75209ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(10) {
+  animation-delay: -203ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(11) {
+  animation-delay: -35766ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(12) {
+  animation-delay: -3402ms; }
+
+.experiment-title
+> .word-container:nth-child(45)
+> span:nth-child(13) {
+  animation-delay: -16991ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(1) {
+  animation-delay: -1574ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(2) {
+  animation-delay: -43987ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(3) {
+  animation-delay: -74548ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(4) {
+  animation-delay: -47745ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(5) {
+  animation-delay: -25289ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(6) {
+  animation-delay: -54191ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(7) {
+  animation-delay: -33515ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(8) {
+  animation-delay: -1176ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(9) {
+  animation-delay: -76068ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(10) {
+  animation-delay: -69333ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(11) {
+  animation-delay: -43813ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(12) {
+  animation-delay: -26277ms; }
+
+.experiment-title
+> .word-container:nth-child(46)
+> span:nth-child(13) {
+  animation-delay: -2459ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(1) {
+  animation-delay: -77326ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(2) {
+  animation-delay: -81805ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(3) {
+  animation-delay: -86914ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(4) {
+  animation-delay: -10321ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(5) {
+  animation-delay: -82187ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(6) {
+  animation-delay: -30617ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(7) {
+  animation-delay: -77015ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(8) {
+  animation-delay: -33875ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(9) {
+  animation-delay: -80823ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(10) {
+  animation-delay: -42964ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(11) {
+  animation-delay: -31889ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(12) {
+  animation-delay: -43552ms; }
+
+.experiment-title
+> .word-container:nth-child(47)
+> span:nth-child(13) {
+  animation-delay: -49790ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(1) {
+  animation-delay: -44137ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(2) {
+  animation-delay: -95995ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(3) {
+  animation-delay: -78246ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(4) {
+  animation-delay: -7222ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(5) {
+  animation-delay: -87945ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(6) {
+  animation-delay: -26946ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(7) {
+  animation-delay: -37684ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(8) {
+  animation-delay: -79281ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(9) {
+  animation-delay: -27649ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(10) {
+  animation-delay: -48807ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(11) {
+  animation-delay: -74557ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(12) {
+  animation-delay: -44925ms; }
+
+.experiment-title
+> .word-container:nth-child(48)
+> span:nth-child(13) {
+  animation-delay: -96103ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(1) {
+  animation-delay: -36551ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(2) {
+  animation-delay: -31921ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(3) {
+  animation-delay: -75989ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(4) {
+  animation-delay: -68811ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(5) {
+  animation-delay: -10194ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(6) {
+  animation-delay: -40701ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(7) {
+  animation-delay: -30366ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(8) {
+  animation-delay: -65780ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(9) {
+  animation-delay: -79501ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(10) {
+  animation-delay: -74890ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(11) {
+  animation-delay: -40669ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(12) {
+  animation-delay: -59234ms; }
+
+.experiment-title
+> .word-container:nth-child(49)
+> span:nth-child(13) {
+  animation-delay: -92828ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(1) {
+  animation-delay: -54728ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(2) {
+  animation-delay: -21224ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(3) {
+  animation-delay: -99554ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(4) {
+  animation-delay: -2555ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(5) {
+  animation-delay: -6354ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(6) {
+  animation-delay: -20260ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(7) {
+  animation-delay: -74345ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(8) {
+  animation-delay: -30950ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(9) {
+  animation-delay: -1790ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(10) {
+  animation-delay: -78063ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(11) {
+  animation-delay: -10544ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(12) {
+  animation-delay: -71271ms; }
+
+.experiment-title
+> .word-container:nth-child(50)
+> span:nth-child(13) {
+  animation-delay: -92837ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(1) {
+  animation-delay: -12883ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(2) {
+  animation-delay: -89574ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(3) {
+  animation-delay: -38737ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(4) {
+  animation-delay: -20040ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(5) {
+  animation-delay: -21074ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(6) {
+  animation-delay: -83135ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(7) {
+  animation-delay: -54414ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(8) {
+  animation-delay: -48018ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(9) {
+  animation-delay: -25740ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(10) {
+  animation-delay: -76843ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(11) {
+  animation-delay: -95206ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(12) {
+  animation-delay: -5711ms; }
+
+.experiment-title
+> .word-container:nth-child(51)
+> span:nth-child(13) {
+  animation-delay: -28718ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(1) {
+  animation-delay: -65860ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(2) {
+  animation-delay: -11123ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(3) {
+  animation-delay: -19906ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(4) {
+  animation-delay: -44727ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(5) {
+  animation-delay: -6416ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(6) {
+  animation-delay: -88296ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(7) {
+  animation-delay: -27597ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(8) {
+  animation-delay: -6435ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(9) {
+  animation-delay: -92692ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(10) {
+  animation-delay: -72645ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(11) {
+  animation-delay: -43379ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(12) {
+  animation-delay: -32272ms; }
+
+.experiment-title
+> .word-container:nth-child(52)
+> span:nth-child(13) {
+  animation-delay: -86459ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(1) {
+  animation-delay: -79374ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(2) {
+  animation-delay: -24206ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(3) {
+  animation-delay: -43704ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(4) {
+  animation-delay: -96597ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(5) {
+  animation-delay: -89631ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(6) {
+  animation-delay: -73597ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(7) {
+  animation-delay: -65978ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(8) {
+  animation-delay: -93889ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(9) {
+  animation-delay: -42841ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(10) {
+  animation-delay: -97327ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(11) {
+  animation-delay: -61919ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(12) {
+  animation-delay: -49922ms; }
+
+.experiment-title
+> .word-container:nth-child(53)
+> span:nth-child(13) {
+  animation-delay: -76023ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(1) {
+  animation-delay: -53027ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(2) {
+  animation-delay: -88217ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(3) {
+  animation-delay: -17983ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(4) {
+  animation-delay: -66667ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(5) {
+  animation-delay: -97988ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(6) {
+  animation-delay: -58939ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(7) {
+  animation-delay: -69223ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(8) {
+  animation-delay: -32348ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(9) {
+  animation-delay: -5824ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(10) {
+  animation-delay: -66542ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(11) {
+  animation-delay: -92345ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(12) {
+  animation-delay: -9714ms; }
+
+.experiment-title
+> .word-container:nth-child(54)
+> span:nth-child(13) {
+  animation-delay: -95984ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(1) {
+  animation-delay: -94166ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(2) {
+  animation-delay: -6000ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(3) {
+  animation-delay: -45273ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(4) {
+  animation-delay: -11564ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(5) {
+  animation-delay: -8904ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(6) {
+  animation-delay: -62770ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(7) {
+  animation-delay: -66832ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(8) {
+  animation-delay: -14785ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(9) {
+  animation-delay: -55425ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(10) {
+  animation-delay: -16443ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(11) {
+  animation-delay: -41950ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(12) {
+  animation-delay: -70819ms; }
+
+.experiment-title
+> .word-container:nth-child(55)
+> span:nth-child(13) {
+  animation-delay: -77115ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(1) {
+  animation-delay: -89520ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(2) {
+  animation-delay: -64781ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(3) {
+  animation-delay: -20822ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(4) {
+  animation-delay: -9389ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(5) {
+  animation-delay: -31411ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(6) {
+  animation-delay: -10868ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(7) {
+  animation-delay: -34347ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(8) {
+  animation-delay: -44290ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(9) {
+  animation-delay: -9733ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(10) {
+  animation-delay: -67050ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(11) {
+  animation-delay: -62019ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(12) {
+  animation-delay: -55128ms; }
+
+.experiment-title
+> .word-container:nth-child(56)
+> span:nth-child(13) {
+  animation-delay: -89178ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(1) {
+  animation-delay: -99764ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(2) {
+  animation-delay: -42402ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(3) {
+  animation-delay: -85518ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(4) {
+  animation-delay: -23869ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(5) {
+  animation-delay: -79593ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(6) {
+  animation-delay: -58104ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(7) {
+  animation-delay: -85468ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(8) {
+  animation-delay: -76794ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(9) {
+  animation-delay: -35317ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(10) {
+  animation-delay: -8163ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(11) {
+  animation-delay: -83777ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(12) {
+  animation-delay: -98949ms; }
+
+.experiment-title
+> .word-container:nth-child(57)
+> span:nth-child(13) {
+  animation-delay: -38830ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(1) {
+  animation-delay: -20697ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(2) {
+  animation-delay: -96453ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(3) {
+  animation-delay: -70606ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(4) {
+  animation-delay: -12175ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(5) {
+  animation-delay: -23805ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(6) {
+  animation-delay: -85333ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(7) {
+  animation-delay: -8959ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(8) {
+  animation-delay: -40248ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(9) {
+  animation-delay: -66966ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(10) {
+  animation-delay: -62333ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(11) {
+  animation-delay: -38471ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(12) {
+  animation-delay: -26287ms; }
+
+.experiment-title
+> .word-container:nth-child(58)
+> span:nth-child(13) {
+  animation-delay: -76572ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(1) {
+  animation-delay: -77496ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(2) {
+  animation-delay: -33926ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(3) {
+  animation-delay: -79011ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(4) {
+  animation-delay: -64160ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(5) {
+  animation-delay: -96087ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(6) {
+  animation-delay: -12579ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(7) {
+  animation-delay: -64691ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(8) {
+  animation-delay: -37049ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(9) {
+  animation-delay: -51753ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(10) {
+  animation-delay: -40482ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(11) {
+  animation-delay: -58645ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(12) {
+  animation-delay: -12864ms; }
+
+.experiment-title
+> .word-container:nth-child(59)
+> span:nth-child(13) {
+  animation-delay: -33613ms; }
